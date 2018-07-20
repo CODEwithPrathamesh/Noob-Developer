@@ -1,0 +1,137 @@
+/* Nav Bar -----------*/
+
+body {
+    background-color: blueviolet;
+}
+
+.mainnav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 5px;
+    margin-right: 3rem;
+}
+
+li a {
+    padding: 10px;
+    display: block;
+}
+
+li:first-child {
+    margin-right: auto;
+}
+
+.material-icons.md-48 { 
+    font-size: 48px; 
+    color: black;
+    margin-top: -5px;
+}
+a {
+    padding: 10px;
+    /* margin-right: 1.3rem; */
+    font-family: 'Bitter', serif;
+    font-weight: 550;
+    color: white;
+    letter-spacing: .9px;
+    /* text-transform: uppercase; */
+    font-size: 1rem;
+    transition: color .3s linear,background .4s ease-in;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black 
+
+}
+
+.common::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: black;
+    transition: width .4s ease-in,background .4s ease-in;
+}
+
+.common:hover::after {
+    width: 100%;
+    transition: width .4s ease-out .2s,background .4s ease-in;
+    background: #D3CCE3;
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3); 
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+}
+
+/* Section-2-------------header----------*/
+
+.containerhead {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.containerhead::after {
+    content: '';
+    display: block;
+    /* position: absolute;
+    top: 70%;
+    left: 0%; */
+    margin: -10% 75% -10% 0%;
+    width: 200px;
+    height: 200px;
+    background-color: #efeff4;
+    transform: rotate(120deg) scale3d(1,4,5);
+}
+
+ img {
+    margin-top: 28px;
+    margin-right: 4%;
+    width: 550px;
+    height: 500px;
+    /* float: right; */
+    border: 1px solid transparent;
+    border-radius: 40px;
+    box-shadow: 10px -8px 8px 1px rgba(216,219,215,.2);
+}
+
+.maintag {
+    text-align: center;
+    height: 60px;
+    width: 660px;
+    margin-right: 1.5%;
+    margin-top: 10%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .3px;
+    color: #ededf3;
+}
+
+.start {
+    position: absolute;
+    top: 54%;
+    right: 55%;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    /* padding-left: 20px; */
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: .4px;
+    background: white;
+    color: blueviolet;
+    transition: background,color .6s linear .2s;
+}
+
+.start:hover {
+    cursor: pointer;
+    background: blueviolet;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 1px 1px 20px 4px rgba(216,219,215,.2);
+}
